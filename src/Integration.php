@@ -1,8 +1,10 @@
 <?php
 
-class Pronamic_WP_Pay_Gateways_DeutscheBank_IDealExpertV3_GatewayIntegration {
+class Pronamic_WP_Pay_Gateways_DeutscheBank_IDealExpertV3_Integration {
 	public function __construct() {
-		$this->id = 'deutschebank-ideal-expert-v3';
+		$this->id       = 'deutschebank-ideal-expert-v3';
+		$this->name     = 'Deutsche Bank - iDEAL Expert - v3';
+		$this->provider = 'deutschebank';
 	}
 
 	public function get_config_factory_class() {
