@@ -15,7 +15,10 @@ class Pronamic_WP_Pay_Gateways_DeutscheBank_IDealExpertV3_Integration extends Pr
 		$this->id            = 'deutschebank-ideal-expert-v3';
 		$this->name          = 'Deutsche Bank - iDEAL Expert (v3)';
 		$this->product_url   = 'https://www.deutschebank.nl/nl/content/producten_en_services_commercial_banking_cash_management_betalen_ideal.html';
-		$this->dashboard_url = 'https://myideal.db.com/ideal/logon_db.do';
+		$this->dashboard_url = array(
+			'test' => 'https://myideal.test.db.com/',
+			'live' => 'https://myideal.db.com/',
+		);
 		$this->provider      = 'deutschebank';
 	}
 
